@@ -1,0 +1,91 @@
+{
+	"variables": [],
+	"info": {
+		"name": "DokaGames",
+		"_postman_id": "5ceab27e-70b7-ca76-aed0-dd31c00bec33",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/product/add",
+			"request": {
+				"url": "http://localhost:8080/product/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"name\": \"Milli Piyango\",\r\n    \"product_id\": 1\r\n  },\r\n  {\r\n    \"name\": \"At Yarışı\",\r\n    \"product_id\": 2\r\n  }\r\n]"
+				},
+				"description": "insert a product"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/product/all",
+			"request": {
+				"url": "http://localhost:8080/product/all",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"name\": \"Milli Piyango\",\r\n    \"product_id\": 1\r\n  },\r\n  {\r\n    \"name\": \"At Yarışı\",\r\n    \"product_id\": 2\r\n  }\r\n]"
+				},
+				"description": "display all product"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/buyer/add",
+			"request": {
+				"url": "http://localhost:8080/buyer/all",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"buyer_id\": 1,\r\n    \"name\": \"Test\",\r\n    \"product_id\": 1\r\n  }\r\n]"
+				},
+				"description": "add buyer"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/buyer/all",
+			"request": {
+				"url": "http://localhost:8080/buyer/all",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"buyer_id\": 1,\r\n    \"name\": \"Test\",\r\n    \"product_id\": 1\r\n  }\r\n]"
+				},
+				"description": "all buyers"
+			},
+			"response": []
+		}
+	]
+}
